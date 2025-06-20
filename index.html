@@ -1,48 +1,146 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Priyanka's GitHub Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Priyanka Rani | Data Portfolio</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      padding: 20px;
-      background-color: #f5f5f5;
-    }
-    h1 {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
       color: #333;
     }
-    .repo {
+    header {
+      background-color: #1f2937;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    header p {
+      margin-top: 10px;
+      font-size: 1.2em;
+    }
+    .section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .section h2 {
+      font-size: 1.8em;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 10px;
+    }
+    .repo, .about, .contact, .skills {
       background: white;
-      border: 1px solid #ddd;
-      padding: 15px;
-      margin-bottom: 15px;
-      border-radius: 8px;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .repo:hover {
+      transform: translateY(-5px);
+      transition: transform 0.2s ease;
     }
     .repo a {
-      font-weight: bold;
-      font-size: 1.2em;
       text-decoration: none;
-      color: #0366d6;
+      color: #1d4ed8;
+      font-size: 1.4em;
+      font-weight: bold;
+    }
+    .repo p {
+      margin-top: 8px;
+    }
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .skill-tag {
+      background-color: #e2e8f0;
+      color: #1a202c;
+      padding: 8px 12px;
+      border-radius: 20px;
+      font-size: 0.95em;
+      font-weight: bold;
+    }
+    .resume-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #2563eb;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .contact a {
+      color: #1d4ed8;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
-  <h1>Welcome to My GitHub Portfolio</h1>
-  <p>Here are a few selected projects I'm proud of:</p>
 
-  <div class="repo">
-    <a href="https://github.com/Priyankarani29/spotify-recommender" target="_blank">Spotify Recommender</a>
-    <p>A music recommendation system using content-based filtering and Spotify audio features.</p>
+  <header>
+    <h1>Priyanka Rani</h1>
+    <p>Aspiring Data Analyst | Data Scientist | Business Analyst | Data Engineer</p>
+    <a class="resume-button" href="Priyanka_Rani_Resume.pdf" target="_blank">📄 Download Resume</a>
+  </header>
+
+  <div class="section about">
+    <h2>About Me</h2>
+    <p>
+      I'm a data-driven problem solver with hands-on experience in machine learning, data visualization, and analytics. 
+      With a strong academic background and practical experience, I enjoy turning raw data into insights that drive real impact.
+    </p>
   </div>
 
-  <div class="repo">
-    <a href="https://github.com/Priyankarani29/gdp-dashboard" target="_blank">GDP Dashboard</a>
-    <p>An interactive Power BI dashboard to visualize GDP data.</p>
+  <div class="section skills">
+    <h2>Skills</h2>
+    <div class="skills-list">
+      <div class="skill-tag">Python</div>
+      <div class="skill-tag">Pandas</div>
+      <div class="skill-tag">NumPy</div>
+      <div class="skill-tag">SQL</div>
+      <div class="skill-tag">Power BI</div>
+      <div class="skill-tag">Machine Learning</div>
+      <div class="skill-tag">Scikit-Learn</div>
+      <div class="skill-tag">Streamlit</div>
+      <div class="skill-tag">RAG & LLMs</div>
+      <div class="skill-tag">Git</div>
+    </div>
   </div>
 
-  <div class="repo">
-    <a href="https://github.com/Priyankarani29/popularity-recommender" target="_blank">Popularity Recommender</a>
-    <p>Recommender system suggesting songs based on global popularity.</p>
+  <div class="section">
+    <h2>Featured Projects</h2>
+
+    <div class="repo">
+      <a href="https://github.com/Priyankarani29/spotify-recommender" target="_blank">Spotify Recommender</a>
+      <p>A content-based music recommender system built with Spotify audio features and Python.</p>
+    </div>
+
+    <div class="repo">
+      <a href="https://github.com/Priyankarani29/gdp-dashboard" target="_blank">GDP Dashboard</a>
+      <p>Power BI dashboard for interactive exploration of GDP data across countries and time.</p>
+    </div>
+
+    <div class="repo">
+      <a href="https://github.com/Priyankarani29/popularity-recommender" target="_blank">Popularity Recommender</a>
+      <p>Basic recommender system suggesting songs based on global popularity metrics using Python.</p>
+    </div>
+  </div>
+
+  <div class="section contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank">linkedin.com/in/YOUR-LINKEDIN</a></p>
+    <p>GitHub: <a href="https://github.com/Priyankarani29" target="_blank">github.com/Priyankarani29</a></p>
   </div>
 
 </body>
