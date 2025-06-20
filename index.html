@@ -30,9 +30,24 @@
   <h1>Welcome to My GitHub Portfolio</h1>
   <p>Here are some of the projects I’ve worked on:</p>
 
-  <div id="repo-list"></div>
+  <!-- Manually listed projects -->
+  <div class="repo">
+    <a href="https://github.com/Priyankarani29/spotify-recommender" target="_blank">Project 1: Data Visualizer</a>
+    <p>A Python app that visualizes CSV data using Matplotlib and Streamlit.</p>
+  </div>
 
-  <script>
+  <div class="repo">
+    <a href="https://github.com/Priyankarani29/popularity-recommender" target="_blank">Project 2: ML House Price Predictor</a>
+    <p>A machine learning model that predicts house prices using scikit-learn and pandas.</p>
+  </div>
+
+  <div class="repo">
+    <a href="https://github.com/Priyankarani29/project-3" target="_blank">Project 3: Portfolio Website</a>
+    <p>This portfolio website built using HTML and GitHub Pages!</p>
+  </div>
+
+  <!-- ❌ Remove or comment out the auto-fetch script -->
+  <!-- <script>
     fetch("https://api.github.com/users/Priyankarani29/repos")
       .then(response => response.json())
       .then(repos => {
@@ -47,6 +62,7 @@
           container.appendChild(div);
         });
       });
-  </script>
+  </script> -->
+
 </body>
 </html>
