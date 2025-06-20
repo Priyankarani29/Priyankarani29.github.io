@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My GitHub Portfolio</title>
+  <title>Priyanka's GitHub Portfolio</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -28,41 +28,14 @@
 </head>
 <body>
   <h1>Welcome to My GitHub Portfolio</h1>
-  <p>Here are some of the projects I’ve worked on:</p>
-
-  <!-- Manually listed projects -->
-  <div class="repo">
-    <a href="https://github.com/Priyankarani29/spotify-recommender" target="_blank">Project 1: Data Visualizer</a>
-    <p>A Python app that visualizes CSV data using Matplotlib and Streamlit.</p>
-  </div>
+  <p>Here are a few projects I’m proud of:</p>
 
   <div class="repo">
-    <a href="https://github.com/Priyankarani29/popularity-recommender" target="_blank">Project 2: ML House Price Predictor</a>
-    <p>A machine learning model that predicts house prices using scikit-learn and pandas.</p>
+    <a href="https://github.com/Priyankarani29/popularity-recommender" target="_blank">Your Project 1</a>
+    <p>Short description of what this project does or what tech it uses.</p>
   </div>
 
-  <div class="repo">
-    <a href="https://github.com/Priyankarani29/project-3" target="_blank">Project 3: Portfolio Website</a>
-    <p>This portfolio website built using HTML and GitHub Pages!</p>
-  </div>
 
-  <!-- ❌ Remove or comment out the auto-fetch script -->
-  <!-- <script>
-    fetch("https://api.github.com/users/Priyankarani29/repos")
-      .then(response => response.json())
-      .then(repos => {
-        const container = document.getElementById("repo-list");
-        repos.forEach(repo => {
-          const div = document.createElement("div");
-          div.className = "repo";
-          div.innerHTML = `
-            <a href="${repo.html_url}" target="_blank">${repo.name}</a>
-            <p>${repo.description || 'No description provided.'}</p>
-          `;
-          container.appendChild(div);
-        });
-      });
-  </script> -->
 
 </body>
 </html>
